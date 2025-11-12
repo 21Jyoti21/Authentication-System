@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000
 connectDB();
 
-const allowedOrigins=['http://localhost:5173','https://authentication-system-virid.vercel.app']
+const allowedOrigins=['http://localhost:5173','https://authentication-system-five-khaki.vercel.app']
 
 app.use(express.json());
 app.use(cookieParser());
