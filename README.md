@@ -6,6 +6,10 @@
 ![Made with](https://img.shields.io/badge/Made%20with-React%20%26%20Node.js-blue)
 
 > A **full-stack authentication system** built with **React, Node.js, Express, and MongoDB**, supporting **email verification**, **OTP-based password reset**, and **JWT authentication** — secure, scalable, and easy to use.
+---
+## 🚀 Live Demo
+
+**Try it now:** [Authentication System Live Demo](https://authentication-system-five-khaki.vercel.app)
 
 ---
 
