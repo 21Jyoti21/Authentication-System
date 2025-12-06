@@ -1,4 +1,3 @@
-// server/config/emailSender.js
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 import { Welcome_Email_Template } from './emailTest.js';
@@ -14,7 +13,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_APP_PASSWORD,
   },
 });
-
 export const sendWelcomeEmail = async (to, name, email) => {
   try {
     const info = await transporter.sendMail({
@@ -24,8 +22,8 @@ export const sendWelcomeEmail = async (to, name, email) => {
       html: Welcome_Email_Template(name, email),
     });
 
-    console.log("✅ Welcome email sent:", info.messageId);
+    console.log("Welcome email sent:", info.messageId);
   } catch (error) {
-    console.error("❌ Error sending welcome email:", error);
+    console.error("Error sending welcome email:", error);
   }
 };
